@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PAD — Plataforma de Audiencias Digitales</title>
+  <meta name="description" content="PAD: Plataforma integral para la gestión digital de audiencias judiciales. Registro de expedientes, videoconferencias, transcripción y consulta jurisprudencial." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">PAD</div>
+        <div class="brand-text">
+          <h1>Plataforma de Audiencias Digitales</h1>
+          <p class="tag">Digitalizando y agilizando procesos judiciales</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#features">Funciones</a>
+        <a href="#benefits">Beneficios</a>
+        <a href="#about">Acerca</a>
+        <a class="cta" href="#contact">Solicitar demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Solución integral para audiencias y gestión de expedientes</h2>
+          <p>Registro centralizado, videoconferencias seguras, transcripción automática y consulta de jurisprudencia — todo en una sola plataforma diseñada para jueces, abogados y administradores.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Solicitar demo</a>
+            <a class="btn ghost" href="#features">Ver funciones</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul>
+            <li><strong>Transcripción</strong> automática de audiencias</li>
+            <li><strong>Grabación</strong> de video y audio</li>
+            <li><strong>Compartir</strong> expedientes en tiempo real</li>
+            <li><strong>Control de permisos</strong> por rol</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section container">
+      <h3>Funciones principales</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Videoconferencia segura</h4>
+          <p>Inicia sesiones con acceso controlado, invitaciones automáticas y ventana flotante para multitarea.</p>
+        </article>
+        <article class="card">
+          <h4>Transcripción y actas</h4>
+          <p>Generación automática de transcripciones y exportación a PDF/TXT para el expediente.</p>
+        </article>
+        <article class="card">
+          <h4>Gestión de expedientes</h4>
+          <p>Sube y consulta documentos (PDF, Word, imágenes) y compártelos durante la audiencia.</p>
+        </article>
+        <article class="card">
+          <h4>Consulta jurisprudencial</h4>
+          <p>Buscador interno por palabras clave, filtrado por fecha y relevancia para apoyar la preparación del caso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="benefits" class="section alt">
+      <div class="container">
+        <h3>Beneficios</h3>
+        <ul class="benefits-list">
+          <li>Centraliza expedientes y comunicaciones.</li>
+          <li>Reduce tiempos administrativos y desplazamientos.</li>
+          <li>Aumenta la seguridad y el respaldo de pruebas.</li>
+          <li>Mejora la eficiencia de jueces y abogados.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>¿Qué es PAD?</h3>
+      <p>PAD es un sistema integral para la gestión digital de audiencias judiciales que combina videoconferencia, transcripción, almacenamiento seguro y búsqueda jurídica en una sola plataforma. (Resumen extraído del documento del proyecto.)</p>
+      <p class="muted">Autores: Ángel Alexey Arreola Morales y equipo — Universidad Politécnica de Pachuca.</p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contacto / Demo</h3>
+      <p>Escríbenos para solicitar una demostración o más información.</p>
+      <form class="contact-form" action="#" onsubmit="alert('Gracias — en producción conecta este formulario a un e-mail o API'); return false;">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje / Solicitar demo" rows="4" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PAD — Plataforma de Audiencias Digitales. Documento base: PAD (Proyecto académico).</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
