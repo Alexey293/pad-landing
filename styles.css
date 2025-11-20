@@ -375,40 +375,4 @@ body {
   .fa-facebook {
     color: #1877f2;
   }
-  /* --- Nuevo Diseño de Footer --- */
-
-  /* Contenedor flexible para acomodar Izquierda - Centro - Derecha */
-  .footer-flex {
-    display: flex;
-    justify-content: space-between; /* Separa los elementos a los extremos */
-    align-items: center; /* Los alinea verticalmente al centro */
-    padding: 40px 20px;
-    gap: 20px;
-  }
-
-  /* Estilo para las imágenes de los logos */
-  .footer-img {
-    height: 100px; /* TAMAÑO GRANDE: Ajusta este número si los quieres más grandes o chicos */
-    width: auto; /* Mantiene la proporción para que no se estiren */
-    display: block;
-  }
-
-  /* El contenido central se lleva el espacio disponible pero centrado */
-  .footer-center {
-    text-align: center;
-    flex: 1; /* Permite que el centro ocupe el espacio necesario sin empujar los logos */
-    max-width: 600px; /* Evita que el texto se estire demasiado */
-  }
-
-  /* Ajuste Responsivo (Celulares): Todo se pone en una sola columna */
-  @media (max-width: 768px) {
-    .footer-flex {
-      flex-direction: column; /* Uno debajo del otro */
-      gap: 40px;
-    }
-
-    .footer-img {
-      height: 80px; /* Un poco más chicos en celular */
-    }
-  }
 }
