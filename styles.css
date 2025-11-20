@@ -326,29 +326,35 @@ body {
   .hero h2 {
     font-size: 32px;
   }
-  /* --- Estilos para Redes Sociales --- */
+
+  /* --- Estilos para Redes Sociales (Actualizado) --- */
   .social-links {
     display: flex;
-    justify-content: center; /* Centra los iconos */
-    gap: 24px; /* Espacio entre iconos */
-    margin-bottom: 20px; /* Espacio debajo de los iconos */
+    justify-content: center;
+    gap: 30px; /* Más espacio entre ellos porque son más grandes */
+    margin-bottom: 30px;
   }
 
   .social-links a {
-    color: var(--muted); /* Color inicial (gris claro) */
-    font-size: 28px; /* Tamaño del icono */
-    transition: all 0.3s ease;
     text-decoration: none;
+    /* Quitamos el color gris para que cada uno tenga el suyo propio */
   }
 
-  .social-links a:hover {
-    color: var(--white); /* Color al pasar el mouse (blanco) */
-    transform: translateY(-3px); /* Pequeño efecto de elevación */
+  /* Configuración general de los Iconos */
+  .social-links i {
+    font-size: 48px; /* AQUI CAMBIAS EL TAMAÑO (Antes 28px) */
+    transition: transform 0.3s ease;
   }
 
-  /* Color específico para Instagram al hacer hover */
-  .social-links a:hover .fa-instagram {
-    background: -webkit-linear-gradient(
+  /* Efecto de "saltito" al pasar el mouse */
+  .social-links a:hover i {
+    transform: translateY(-5px);
+  }
+
+  /* --- COLOR INSTAGRAM (Degradado Rosa) --- */
+  .fa-instagram {
+    /* El degradado oficial de Instagram */
+    background: linear-gradient(
       45deg,
       #f09433 0%,
       #e6683c 25%,
@@ -356,12 +362,17 @@ body {
       #cc2366 75%,
       #bc1888 100%
     );
+
+    /* Truco para pintar el texto con el fondo */
     -webkit-background-clip: text;
+    background-clip: text; /* Evita la advertencia amarilla */
     -webkit-text-fill-color: transparent;
+
+    display: inline-block; /* Necesario para que el degradado se vea bien en todos los navegadores */
   }
 
-  /* Color específico para Facebook al hacer hover */
-  .social-links a:hover .fa-facebook {
+  /* --- COLOR FACEBOOK (Azul Oficial) --- */
+  .fa-facebook {
     color: #1877f2;
   }
 }
