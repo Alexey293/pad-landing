@@ -326,4 +326,42 @@ body {
   .hero h2 {
     font-size: 32px;
   }
+  /* --- Estilos para Redes Sociales --- */
+  .social-links {
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+    gap: 24px; /* Espacio entre iconos */
+    margin-bottom: 20px; /* Espacio debajo de los iconos */
+  }
+
+  .social-links a {
+    color: var(--muted); /* Color inicial (gris claro) */
+    font-size: 28px; /* Tamaño del icono */
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .social-links a:hover {
+    color: var(--white); /* Color al pasar el mouse (blanco) */
+    transform: translateY(-3px); /* Pequeño efecto de elevación */
+  }
+
+  /* Color específico para Instagram al hacer hover */
+  .social-links a:hover .fa-instagram {
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Color específico para Facebook al hacer hover */
+  .social-links a:hover .fa-facebook {
+    color: #1877f2;
+  }
 }
